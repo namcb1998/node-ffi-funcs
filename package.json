@@ -1,0 +1,52 @@
+{
+  "_from": "node-ffi-funcs",
+  "_id": "node-ffi-funcs@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-vPf5Oc0JHeq5AhJy30GDevGopaCUXwx20sIG6Yolmd8Z0rqjzqgXcZoSVF5/m8jR+Xc1vVXDXH5jv2x0kx5FFw==",
+  "_location": "/node-ffi-funcs",
+  "_phantomChildren": {
+    "get-uv-event-loop-napi-h": "1.0.6",
+    "node-gyp-build": "4.2.3",
+    "ref-napi": "1.5.2",
+    "ref-struct-di": "1.1.1"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-ffi-funcs",
+    "name": "node-ffi-funcs",
+    "escapedName": "node-ffi-funcs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-ffi-funcs/-/node-ffi-funcs-1.1.1.tgz",
+  "_shasum": "999e2926b11f554a251aac6ffb6b0513e93f9ba5",
+  "_spec": "node-ffi-funcs",
+  "_where": "D:\\ATP\\Projects\\SimpleNinjaSystem",
+  "author": "",
+  "bundleDependencies": false,
+  "dependencies": {
+    "ffi-napi": "^2.4.6"
+  },
+  "deprecated": false,
+  "description": "`ffi`不支持`nodejs10`及以上的版本，故本项目使用替代模块`ffi-napi`",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^7.0.0"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "node-ffi-funcs",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha \"test/**/*.@(win32.test.js)\" --timeout 9000 --slow 10",
+    "testDarwin": "cross-env NODE_ENV=test mocha \"test/**/*.@(darwin.test.js)\" --timeout 9000 --slow 10"
+  },
+  "version": "1.1.1"
+}
